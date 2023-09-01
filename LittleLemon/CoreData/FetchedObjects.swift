@@ -12,7 +12,6 @@ import SwiftUI
 struct FetchedObjects<T, Content>: View where T : NSManagedObject, Content : View {
     
   let content: ([T]) -> Content
-
   var request: FetchRequest<T>
   var results: FetchedResults<T>{ request.wrappedValue }
     

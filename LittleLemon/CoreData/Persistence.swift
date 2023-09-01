@@ -10,7 +10,6 @@ import Foundation
 
 struct PersistenceController {
     static let shared = PersistenceController()
-
     let container: NSPersistentContainer
 
     init() {
@@ -21,7 +20,6 @@ struct PersistenceController {
     }
     
     func clear() {
-        // Delete all dishes from the store
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Dish")
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         let _ = try? container.persistentStoreCoordinator.execute(deleteRequest, with: container.viewContext)

@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct MenuItem: Decodable {
- 
+struct MenuItem: Codable {
+    
     let title: String
     let image: String
     let price: String
-    let itemDescription: String
+    let description: String
     let category: String
     
 }
