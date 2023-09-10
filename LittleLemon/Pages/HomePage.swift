@@ -108,7 +108,7 @@ struct HomePage: View {
                         .foregroundColor(.white)
                         .lineSpacing(4)
                         .padding()
-                    AsyncImage(url: URL(string: "https://github.com/ClaireYurev/metaiosdevelopercapstone/blob/main/lobsterrolls.png?raw=true")) { phase in
+                    AsyncImage(url: URL(string: "https://github.com/ClaireYurev/metaiosdevelopercapstone/blob/main/LittleLemon/Assets.xcassets/poster-image-storefront/lobsterrolls.png?raw=true")) { phase in
                         if let image = phase.image {
                             image.resizable() // Display the loaded image
                         } else if phase.error != nil {
